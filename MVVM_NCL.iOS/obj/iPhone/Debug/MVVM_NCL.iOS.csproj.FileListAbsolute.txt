@@ -1,0 +1,14 @@
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\actool\_ProcessedImageAssetsPath.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\_ProcessedBundleResourcesPath.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\_ProcessedContentPath.items
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\optimized\
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\MVVM_NCL.iOS.csproj.AssemblyReference.cache
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\Properties\Page1.xaml.g.cs
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL.iOS\obj\iPhone\Debug\MVVM_NCL.iOS.csproj.CoreCompileInputs.cache
