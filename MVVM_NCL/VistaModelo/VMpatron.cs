@@ -8,18 +8,13 @@ using Xamarin.Forms;
 
 namespace MVVM_NCL.VistaModelo
 {
-    internal class VMpatron : BaseViewModel
+     class VMpatron : BaseViewModel
     {
-        #region VARIABLES 
+        #region VARIABLES
         string _Texto;
         #endregion
         #region CONSTRUCTOR
-        public VMpatron(INavigation navigation)
-        {
-            Navigation = navigation;
-        }
-        #endregion
-        #region OBJETOS
+
         public string Texto
         {
             get { return _Texto; }
@@ -27,20 +22,24 @@ namespace MVVM_NCL.VistaModelo
         }
         #endregion
         #region PROCESOS
-        public async Task ProcesoAsyncrong()
-        {
 
+        public async Task ProccesoAsyncrong()
+        {
         }
         public void ProcesoSimple()
         {
-
         }
-
-
         #endregion
         #region COMANDOS
-        public ICommand ProcesoAsynCommand => new Command(async () => await ProcesoAsyncrong());
+        public ICommand ProcesoAsynccommand => new Command(async () => await ProccesoAsyncrong());
         public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
+        #endregion
+
+        #region CONSTRUCTOR
+        public VMpatron(INavigation navigation)
+        {
+            Navigation = navigation;
+        }
         #endregion
     }
 }

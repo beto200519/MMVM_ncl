@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
+
 namespace MVVM_NCL.VistaModelo
 {
     public class BaseViewModel : INotifyPropertyChanged
