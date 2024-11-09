@@ -1,4 +1,4 @@
-﻿using MVVM_NCL.vistas;
+﻿using MVVM_NCL.Vista;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +11,7 @@ namespace MVVM_NCL
         {
             InitializeComponent();
 
-            MainPage = new Pagina1();
+            MainPage = new NavigationPage(new Page1());
         }
 
         protected override void OnStart()
