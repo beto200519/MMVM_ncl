@@ -52,10 +52,16 @@ namespace MVVM_NCL.VistaModelo
         {
 
         }
+        public async Task Alerta(MuUsuario parametro)
+        {
+            await DisplayAlert("Titulo", parametro.Nombre, "Ok");
+        }
+
         #endregion
         #region COMANDOS
         public ICommand Volvercommand => new Command(async () => await ProcesoAsyncrono());
         //public Icommand ProcesoSimpcommand => new command (procesoSimple);
+        public ICommand Alertacommand => new Command<MuUsuario>(async (p) => await Alerta(p));
         #endregion
 
     }
