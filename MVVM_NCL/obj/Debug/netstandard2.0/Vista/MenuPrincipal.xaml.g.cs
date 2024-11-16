@@ -8,17 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MVVM_NCL.Vista.MenuPrincipal.xaml", "Vista/MenuPrincipal.xaml", typeof(global::MVVM_NCL.Vista.MenuPincipal))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MVVM_NCL.Vista.MenuPrincipal.xaml", "Vista/MenuPrincipal.xaml", typeof(global::MVVM_NCL.Vista.MenuPrincipal))]
 
 namespace MVVM_NCL.Vista {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Vista\\MenuPrincipal.xaml")]
-    public partial class MenuPincipal : global::Xamarin.Forms.ContentPage {
+    public partial class MenuPrincipal : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.CollectionView listaruser;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MenuPincipal));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MenuPrincipal));
+            listaruser = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.CollectionView>(this, "listaruser");
         }
     }
 }

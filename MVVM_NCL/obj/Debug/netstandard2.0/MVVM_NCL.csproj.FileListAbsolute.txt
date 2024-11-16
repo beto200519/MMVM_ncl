@@ -5,8 +5,11 @@ C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\bin\Debug\netstandard2.0\MVVM_NCL.
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\MVVM_NCL.csproj.AssemblyReference.cache
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\MVVM_NCL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\Vista\Page1.xaml.g.cs
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\Vista\Crudpokemon.xaml.g.cs
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\Vista\MenuPrincipal.xaml.g.cs
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\Vista\Page2.xaml.g.cs
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\Vista\Pagina1.xaml.g.cs
+C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\Vista\Pagina2.xaml.g.cs
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\MVVM_NCL.AssemblyInfoInputs.cache
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\MVVM_NCL.AssemblyInfo.cs
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\MVVM_NCL.csproj.CoreCompileInputs.cache
@@ -15,5 +18,3 @@ C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\XamlC.sta
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\MVVM_NCL.dll
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\refint\MVVM_NCL.dll
 C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\MVVM_NCL.pdb
-C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\Vista\MenuPrincipal.xaml.g.cs
-C:\Users\rivel\source\repos\MVVM_NCL\MVVM_NCL\obj\Debug\netstandard2.0\Vista\Crudpokemon.xaml.g.cs

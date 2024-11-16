@@ -1,5 +1,7 @@
-﻿using MVVM_NCL.Modelo;
+﻿
+using MVVM_NCL.Modelo;
 using MVVM_NCL.Vista;
+using MVVM_NCL.VistaModelo;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,73 +11,74 @@ using Xamarin.Forms;
 
 namespace MVVM_NCL.VistaModelo
 {
-    internal class VMmenuPrincipal:BaseViewModel
+    class VMmenuprincipal : BaseViewModel
     {
         #region VARIABLES
         string _Texto;
-        public List<MmenuPrincipal> Listausuarios { get; set; }
+        public List<MmenuPrincipal> listausuarios { get; set; }
         #endregion
+
         #region CONSTRUCTOR 
-        public VMmenuPrincipal(INavigation navigation)
+        public VMmenuprincipal(INavigation navigation)
         {
             Navigation = navigation;
             Mostrarusuarios();
         }
-
         #endregion
 
         #region OBJETOS
         public void Mostrarusuarios()
         {
-            Listausuarios = new List<MmenuPrincipal>
+            listausuarios = new List<MmenuPrincipal>
             {
                 new MmenuPrincipal
                 {
-                    Pagina = "Entry Datapiker, picker, label, navegacion",
-                    icono = "https://i.ibb.co/TBCb5vS/fantasma-personalizado.png"
+                    Pagina = "Entry, datepicker, picker, label, navegacion",
+                    Icono = "https://i.ibb.co/9ycNzG3/sombrero-de-bruja.png"
                 },
                 new MmenuPrincipal
                 {
-                    Pagina = "Adrian",
-                    icono = "https://i.ibb.co/b3B4y4p/monstruo.png"
+                    Pagina = "CollectionView sin enlace a base de datos",
+                    Icono = "https://i.ibb.co/n7KzpCS/noche.png"
                 },
                 new MmenuPrincipal
                 {
-                    Pagina = "Brindis",
-                   icono = "https://i.ibb.co/Nm9TLxz/frankestein.png"
+                    Pagina = "Crud pokemon",
+                    Icono = "https://i.ibb.co/RYV5P45/parca.png"
                 }
             };
         }
         #endregion
+
         #region PROCESOS
         public async Task ProcesoAsyncrono()
         {
 
         }
-        public async Task Navegar(MmenuPrincipal parametro)
+
+        public async Task Navegar(MmenuPrincipal parametros)
         {
             string pagina;
-            pagina = parametro.Pagina;
-            if(pagina.Contains("Entry, datepicker" ))
+            pagina = parametros.Pagina;
+            if (pagina.Contains("Entry, datapicker"))
             {
-                await Navigation.PushAsync(new Page1());
+                await Navigation.PushAsync(new Pagina1());
             }
-            if (pagina.Contains("collectionView sin enlace"))
+            if (pagina.Contains("CollectionView sin enlace"))
             {
-                await Navigation.PushAsync(new Page2());
+                await Navigation.PushAsync(new Pagina2());
             }
-            if (pagina.Contains("Crud Pokemon"))
+            if (pagina.Contains("Crud pokemon"))
             {
                 await Navigation.PushAsync(new Crudpokemon());
             }
         }
-
         #endregion
+
         #region COMANDOS
-//        public ICommand Volvercommand => new Command(async () => await ProcesoAsyncrono());
+        //public ICommand Volvercommand => new Command(async () => await ProcesoAsyncrono());
         //public Icommand ProcesoSimpcommand => new command (procesoSimple);
         public ICommand Navegarcommand => new Command<MmenuPrincipal>(async (p) => await Navegar(p));
         #endregion
-
     }
 }

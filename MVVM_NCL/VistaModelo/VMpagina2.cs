@@ -1,68 +1,46 @@
-﻿using System;
+﻿using MVVM_NCL.VistaModelo;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using MVVM_NCL.Modelo;
 using Xamarin.Forms;
-using System.Globalization;
 
 namespace MVVM_NCL.VistaModelo
 {
-    public class VMpagina2:BaseViewModel
-    {
-        #region
+    class VMPagina2 : BaseViewModel
+     {
+        #region VARIABLES
         string _Texto;
-        public List<MuUsuario> Listausuarios { get; set; }
         #endregion
-        #region CONSTRUCTOR 
-        public VMpagina2(INavigation navigation)
-        {
-            Navigation = navigation;
-            Mostrarusuarios();
-        }
+        #region CONSTRUCTOR
 
-        #endregion
-
-        #region OBJETOS
-        public void Mostrarusuarios()
+        public string Texto
         {
-            Listausuarios = new List<MuUsuario>
-            {
-                new MuUsuario
-                {
-                    Nombre = "Maria",
-                    Imagen = "https://i.ibb.co/TBCb5vS/fantasma-personalizado.png"
-                },
-                new MuUsuario
-                {
-                    Nombre = "Adrian",
-                    Imagen = "https://i.ibb.co/b3B4y4p/monstruo.png"
-                },
-                new MuUsuario
-                {
-                    Nombre = "Brindis",
-                    Imagen = "https://i.ibb.co/Nm9TLxz/frankestein.png"
-                }
-            };
+            get { return _Texto; }
+            set { SetValue(ref _Texto, value); }
         }
         #endregion
         #region PROCESOS
-        public async Task ProcesoAsyncrono()
-        {
 
-        }
-        public async Task Alerta(MuUsuario parametro)
+        public async Task Volver()
         {
-            await DisplayAlert("Titulo", parametro.Nombre, "Ok");
+            await Navigation.PopAsync();
         }
-
+        public void ProcesoSimple()
+        {
+        }
         #endregion
         #region COMANDOS
-        public ICommand Volvercommand => new Command(async () => await ProcesoAsyncrono());
-        //public Icommand ProcesoSimpcommand => new command (procesoSimple);
-        public ICommand Alertacommand => new Command<MuUsuario>(async (p) => await Alerta(p));
+        public ICommand ProcesoAsynccommand => new Command(async () => await Volver());
+        public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
         #endregion
 
+        #region CONSTRUCTOR
+        public VMPagina2(INavigation navigation)
+        {
+            Navigation = navigation;
+        }
+        #endregion
     }
 }

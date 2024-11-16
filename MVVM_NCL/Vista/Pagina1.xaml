@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vistamodelo="clr-namespace:MVVM_NCL.VistaModelo" x:DataType="vistamodelo:VMpagina1"
+             x:Class="MVVM_NCL.Vista.Pagina1"        
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid BackgroundColor="Darkorange">
+        <StackLayout VerticalOptions="Center">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="N1:"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+                <Entry PlaceholderColor="White"
+                       Placeholder="Escriba un número"
+                       HorizontalOptions="StartAndExpand"
+                       Text="{Binding N1}"
+                       Keyboard="Numeric" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="N2:"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+                <Entry PlaceholderColor="White"
+                       Placeholder="Escriba un número"
+                       HorizontalOptions="StartAndExpand"
+                       Text="{Binding N2}"
+                       Keyboard="Numeric" />
+            </StackLayout>
+
+            <!-- Botón para sumar -->
+            <Button Text="Sumar"
+                    HorizontalOptions="Center"
+                    CornerRadius="5"
+                    BackgroundColor="DarkOrange"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center"
+                    Command="{Binding suymarcommand}"
+                    TextTransform="None"
+                    TextColor="Black" />
+
+            <Label Text="{Binding R}"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="35" />
+
+            <Button Text="Ir a pagina 2"
+                    HorizontalOptions="Center"
+                    CornerRadius="5"
+                    BackgroundColor="DarkOrange"
+                    FontAttributes="Bold"
+                    Command="{Binding PNavegarPagina2command}"></Button>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Picker:"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+                <Picker HorizontalOptions="FillAndExpand"
+                        Title="Seleccione una opción"
+                        SelectedItem="{}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Administrador</x:String>
+                            <x:String>Empleado</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

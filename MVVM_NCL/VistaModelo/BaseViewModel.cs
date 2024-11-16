@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 using System.Runtime.CompilerServices;
+using Xamarin.Forms;
 using System.ComponentModel;
 
 namespace MVVM_NCL.VistaModelo

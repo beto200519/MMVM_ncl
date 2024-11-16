@@ -5,38 +5,61 @@
             NavigationPage.HasNavigationBar="False">
 
     <Grid>
-        <Image></Image>
-        <CollectionView ItemsSource="{Binding Listausuarios}"
-                        VerticalOptions="Center"
-                        Margin="20,80,20,0"
-                        x:Name="listauser">
+        <Image Source="derecho.png"
+               VerticalOptions="Start"
+               HeightRequest="50"
+               HorizontalOptions="Start"
+               Margin="10">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Volvercommand}" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+        <CollectionView ItemsSource="{Binding listapaginas}" 
+                    VerticalOptions="Center" 
+                    Margin="20,80,20,0"
+                    x:Name="listaUser">
+
             <CollectionView.ItemsLayout>
                 <GridItemsLayout Orientation="Vertical"
-                                 Span="1"
-                                 VerticalItemSpacing="20"/>
+                             Span="1"
+                             VerticalItemSpacing="20"/>
             </CollectionView.ItemsLayout>
+
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame CornerRadius="15"
-                           BackgroundColor="DarkOrange">
-                        <StackLayout Orientation="Horizontal">
-                            <Image Source="{Binding Imagen}"
-                               HeightRequest="100"/>
-                            <Label Text="{Binding Nombre}"
-                               VerticalOptions="Center"
-                               FontSize="20"
-                               FontAttributes="Bold"/>
+                    <Frame CornerRadius="15" 
+                       Padding="10" 
+                       Margin="10"
+                       BackgroundColor="DarkOrange">
 
-                        </StackLayout>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding 
-                                Path=BindingContext.Alertacommand, 
-                                Source={x:Reference listauser}}"
-                                 CommandParameter="{Binding .}"/>
+                            <!-- Este comando hace referencia a Alertacommand en el contexto de BindingContext del CollectionView -->
+                            <TapGestureRecognizer 
+                            Command="{Binding
+                            Path=BindingContext.Alertacommand,
+                            Source={x:Reference listaUser}}"
+                        CommandParameter="{Binding .}"/>
                         </Frame.GestureRecognizers>
+
+                        <StackLayout>
+                            <Image Source="{Binding Imagen}" 
+                               HeightRequest="100" 
+                               WidthRequest="100" 
+                               Aspect="AspectFill"/>
+
+                            <Label Text="{Binding Nombre}" 
+                               FontSize="20" 
+                               FontAttributes="Bold" 
+                               HorizontalOptions="Center"
+                               TextColor="White"/>
+                        </StackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
+
         </CollectionView>
     </Grid>
+
 </ContentPage>
