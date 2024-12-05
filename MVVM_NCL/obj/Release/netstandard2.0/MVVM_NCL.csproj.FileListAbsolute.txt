@@ -1,0 +1,16 @@
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\MVVM_NCL.csproj.AssemblyReference.cache
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\MVVM_NCL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\Vista\Menuprincipal.xaml.g.cs
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\Vista\Pagina1.xaml.g.cs
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\Vista\Pagina2.xaml.g.cs
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\Vista\Pokemon\Detallepokemon.xaml.g.cs
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\Vista\Pokemon\Listapokemon.xaml.g.cs
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\Vista\Pokemon\Registrarpokemon.xaml.g.cs
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\MVVM_NCL.AssemblyInfoInputs.cache
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\MVVM_NCL.AssemblyInfo.cs
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\MVVM_NCL.csproj.CoreCompileInputs.cache
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\MVVM_NCL.sourcelink.json
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\MVVM_NCL.dll
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\refint\MVVM_NCL.dll
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL\obj\Release\netstandard2.0\MVVM_NCL.pdb

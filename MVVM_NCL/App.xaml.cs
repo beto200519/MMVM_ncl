@@ -1,5 +1,6 @@
 ﻿using MVVM_NCL.Modelo;
 using MVVM_NCL.Vista;
+using MVVM_NCL.Vista.Pokemon;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,7 @@ namespace MVVM_NCL
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Pagina1());
+            MainPage = new NavigationPage(new Listapokemon());
         }
 
         protected override void OnStart()

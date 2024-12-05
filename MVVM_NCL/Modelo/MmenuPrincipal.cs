@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MVVM_NCL.Modelo
 {
-     class MmenuPrincipal
+    public class Mmenuprincipal
     {
         public string Pagina { get; set; }
         public string Icono { get; set; }

@@ -3,51 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MVVM_NCL.Vista.Pagina2" 
              NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Image Source="flechavolver.png"
+               VerticalOptions="Start"
+               HeightRequest="50"
+               HorizontalOptions="Start"
+               Margin="10"
+               >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Volvercommand}"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <CollectionView ItemsSource="{Binding listausuarios}"
+                        VerticalOptions="Center"
+                        Margin="20,80,20,0"
+                        x:Name="listauser">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="1"
+                                 VerticalItemSpacing="20"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="15"
+                           BackgroundColor="#00DE87"
+                           >
 
-    
-    <CollectionView ItemsSource="{Binding listausuarios}" 
-                    VerticalOptions="Center" 
-                    Margin="20,80,20,0"
-                    x:Name="listaUser">
+                        <StackLayout Orientation="Horizontal"
+                                             >
+                            <Image Source="{Binding Imagen}"
+                               HeightRequest="100"/>
+                            <Label Text="{Binding Nombre}"
+                               VerticalOptions="Center"
+                               FontSize="20"
+                               FontAttributes="Bold"/>
 
-        <CollectionView.ItemsLayout>
-            <GridItemsLayout Orientation="Vertical"
-                             Span="1"
-                             VerticalItemSpacing="20"/>
-        </CollectionView.ItemsLayout>
+                        </StackLayout>
 
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Frame CornerRadius="15" 
-                       Padding="10" 
-                       Margin="10"
-                       BackgroundColor="DarkOrange">
-
-                    <Frame.GestureRecognizers>
-                        <!-- Este comando hace referencia a Alertacommand en el contexto de BindingContext del CollectionView -->
-                        <TapGestureRecognizer 
-                            Command="{Binding
-                            Path=BindingContext.Alertacommand,
-                            Source={x:Reference listaUser}}"
-                        CommandParameter="{Binding .}"/>
-                    </Frame.GestureRecognizers>
-
-                    <StackLayout>
-                        <Image Source="{Binding Imagen}" 
-                               HeightRequest="100" 
-                               WidthRequest="100" 
-                               Aspect="AspectFill"/>
-
-                        <Label Text="{Binding Nombre}" 
-                               FontSize="20" 
-                               FontAttributes="Bold" 
-                               HorizontalOptions="Center"
-                               TextColor="White"/>
-                    </StackLayout>
-                </Frame>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-
-    </CollectionView>
-
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Path=BindingContext.Alertacommand,Source={x:Reference listauser}}" 
+                                            CommandParameter="{Binding .}"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
 </ContentPage>

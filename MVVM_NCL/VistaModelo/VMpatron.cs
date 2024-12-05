@@ -10,11 +10,17 @@ namespace MVVM_NCL.VistaModelo
 {
     class VMpatron : BaseViewModel
     {
+
         #region VARIABLES
         string _Texto;
         #endregion
         #region CONSTRUCTOR
-
+        public VMpatron(INavigation navigation)
+        {
+            Navigation = navigation;
+        }
+        #endregion
+        #region OBJETOS
         public string Texto
         {
             get { return _Texto; }
@@ -22,24 +28,18 @@ namespace MVVM_NCL.VistaModelo
         }
         #endregion
         #region PROCESOS
-
-        public async Task ProccesoAsyncrong()
+        public async Task ProcesoAsyncrono()
         {
+
         }
         public void ProcesoSimple()
         {
+
         }
         #endregion
         #region COMANDOS
-        public ICommand ProcesoAsynccommand => new Command(async () => await ProccesoAsyncrong());
+        public ICommand ProcesoAsyncommand => new Command(async () => await ProcesoAsyncrono());
         public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
-        #endregion
-
-        #region CONSTRUCTOR
-        public VMpatron(INavigation navigation)
-        {
-            Navigation = navigation;
-        }
         #endregion
     }
 }

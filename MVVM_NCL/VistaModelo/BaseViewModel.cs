@@ -13,10 +13,7 @@ namespace MVVM_NCL.VistaModelo
         public INavigation Navigation;
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public void OnpropertyChanged([CallerMemberName] string nombre = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nombre));
-        }
+
         private ImageSource foto;
         public ImageSource Foto
         {
@@ -24,13 +21,18 @@ namespace MVVM_NCL.VistaModelo
             set
             {
                 foto = value;
-                OnpropertyChanged();
+                OnPropertyChanged();
             }
         }
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            var handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(propertyName));
+            }
         }
 
         public async Task DisplayAlert(string title, string message, string cancel)

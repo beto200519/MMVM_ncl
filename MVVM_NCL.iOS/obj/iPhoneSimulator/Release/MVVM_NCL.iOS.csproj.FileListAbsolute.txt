@@ -1,0 +1,12 @@
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\actool\_PartialAppManifest.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\actool\_BundleResourceWithLogicalName.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\actool\_ProcessedImageAssetsPath.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\coremlc\_PartialAppManifest.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\_ProcessedBundleResourcesPath.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\_ProcessedContentPath.items
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\optimized\
+C:\Users\Norberto Carrillo\Source\Repos\MVVM_ncl\MVVM_NCL.iOS\obj\iPhoneSimulator\Release\MVVM_NCL.iOS.csproj.AssemblyReference.cache

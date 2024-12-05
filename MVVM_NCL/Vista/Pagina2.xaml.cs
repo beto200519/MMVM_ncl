@@ -16,7 +16,7 @@ namespace MVVM_NCL.Vista
         public Pagina2()
         {
             InitializeComponent();
-            BindingContext = new VMPage2(Navigation);
+            BindingContext = new VMpagina2(Navigation);
 
         }
     }
